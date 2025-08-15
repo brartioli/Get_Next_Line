@@ -6,7 +6,19 @@
 /*   By: bfernan2 <bfernan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 12:00:08 by bfernan2          #+#    #+#             */
-/*   Updated: 2025/08/15 12:00:09 by bfernan2         ###   ########.fr       */
+/*   Updated: 2025/08/15 18:39:43 by bfernan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include	"get_next_line.h"
+
+int	find_nl(char *str)
+{
+	while (*str)
+	{
+		if (*str == '\n')
+			return (1);
+		str++;
+	}
+	return (0);
+}

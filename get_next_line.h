@@ -6,7 +6,7 @@
 /*   By: bfernan2 <bfernan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 11:56:48 by bfernan2          #+#    #+#             */
-/*   Updated: 2025/08/15 12:02:01 by bfernan2         ###   ########.fr       */
+/*   Updated: 2025/08/15 18:37:51 by bfernan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,12 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+#ifndef BUFFER_SIZE
+#define BUFFER_SIZE 1024
+#endif
+
+char	*get_next_line(int fd);
+int		find_nl(char *str);
 
 #endif
